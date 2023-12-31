@@ -1,0 +1,1 @@
+(()=>{var e={860:e=>{"use strict";e.exports=require("express")}},r={};function o(t){var n=r[t];if(void 0!==n)return n.exports;var s=r[t]={exports:{}};return e[t](s,s.exports,o),s.exports}(()=>{const e=o(860)();e.get("/",(function(e,r){r.send("Hello World")})),e.listen(9e3,(function(){console.log("Example app listening on port 9000!")}))})()})();
