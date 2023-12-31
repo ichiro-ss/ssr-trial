@@ -12,6 +12,13 @@ fs.readdirSync('node_modules')
   mode: "production",
 
   entry: "./server/index.js",
-
+  module: {
+    rules: [
+      {
+        test: /\.js$/,
+        loader: "babel-loader",
+      },
+    ],
+  },
   externals: nodeModules
 };
