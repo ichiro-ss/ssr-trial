@@ -3,7 +3,18 @@ const app = express();
 const port = 9000;
 
 app.get("/", function (req, res) {
-  res.send("Hello World");
+    const html = `
+    <html lang="en">
+    <head>
+        <script src="client.js" async defer></script>
+    </head>
+    <body>
+        <div id="root">Hello World</div>
+    </body>
+    </html>
+    `;
+
+  res.send(html);
 });
 
 app.listen(port, function () {
